@@ -1,0 +1,18 @@
+.news-main {
+  display: flex;
+  flex-direction: column;
+
+  .page-nav {
+    margin: 0 0 4rem 0;
+    align-self: center;
+
+    ol {
+      list-style: none;
+      display: flex;
+
+      a {
+        font-size: 2rem;
+      }
+    }
+  }
+}

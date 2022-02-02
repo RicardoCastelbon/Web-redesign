@@ -1,0 +1,88 @@
+.index-main {
+  padding: 2rem 4rem;
+  background-image: url(/assets/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5rem;
+    margin: 2rem 0;
+
+    a {
+      background: #ffffff;
+      position: relative;
+      border-radius: 0.2rem;
+      padding: 1rem;
+      min-height: 30rem;
+      color: #000000;
+      max-width: 400px;
+      margin: 0 auto;
+      text-decoration: none;
+
+      .index-main__img-wrapper {
+        width: 100%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      h2 {
+        font-size: 2.4rem;
+        margin: 1rem 0;
+        text-decoration: underline;
+      }
+
+      p {
+        font-size: 1.7rem;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        border-radius: 0.2rem;
+        top: 0;
+        left: 0;
+        background: #ffffff;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: all 0.5s ease 0s;
+      }
+
+      &:hover {
+        &::after {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  ul {
+    li {
+      list-style: none;
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .index-main {
+    section {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .index-main {
+    padding: 6rem 4rem;
+
+    section {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

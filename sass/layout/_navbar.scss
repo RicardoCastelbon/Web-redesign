@@ -1,0 +1,196 @@
+//------STYLING-----------
+.search-bar {
+  width: 100%;
+  height: 30px;
+}
+
+.login-btn {
+  padding: 0.3em;
+  font-size: 1.6rem;
+  font-family: "Raleway", sans-serif;
+}
+
+.toggleInput {
+  display: none;
+}
+
+.language-login {
+  display: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  display: flex;
+  padding: 1em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.language {
+  display: none;
+}
+
+.main-links {
+  display: none;
+
+  li {
+    margin-left: 0;
+  }
+}
+
+.open-icon {
+  font-size: 30px;
+}
+
+.open-icon:hover {
+  cursor: pointer;
+}
+
+.close-icon {
+  display: none;
+  font-size: 30px;
+}
+
+.close-icon:hover {
+  cursor: pointer;
+}
+
+.category {
+  li {
+    list-style-type: square;
+  }
+
+  li:first-child {
+    font-weight: 600;
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+//---------DROPDOWN MENU LOGIC-------------
+.dropDownMenu {
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  left: -4000px;
+  transition: all 0.2s ease-in-out;
+  display: block;
+  flex-wrap: wrap;
+  padding: 1rem;
+
+  ul {
+    text-decoration: none;
+    list-style-type: none;
+    margin-bottom: 4rem;
+  }
+
+  li {
+    margin-bottom: 1.2rem;
+  }
+}
+
+.toggleInput:checked ~ .dropDownMenu {
+  left: 0px;
+  background-color: var(--nav-color);
+}
+
+.toggleInput:checked ~ .open-icon {
+  display: none;
+}
+
+.toggleInput:checked ~ .close-icon {
+  display: block;
+}
+
+//-------MEDIA QUERY------------------
+@media screen and (min-width: 1000px) {
+  .main-nav {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .search-bar {
+    width: 70%;
+  }
+
+  .logo {
+    width: 350px;
+  }
+
+  .toggle {
+    display: flex;
+  }
+
+  .nav-container {
+    position: relative;
+    width: 100%;
+    align-items: flex-end;
+    padding: 2.5rem 1rem;
+  }
+
+  .login-language,
+  .searchBar-links {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .main-links {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    list-style-type: none;
+
+    li {
+      margin-right: 3rem;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .login-btn {
+    margin: 0.5em 0 0 4em;
+  }
+
+  .language {
+    display: flex;
+
+    a {
+      display: block;
+      margin-top: 0.5rem;
+    }
+
+    img {
+      width: 25px;
+      margin-left: 1.5em;
+    }
+  }
+
+  //-----------DROPDOWN MENU--------------
+  .dropDownMenu {
+    display: flex;
+    justify-content: center;
+    left: 0px;
+    top: -4000px;
+  }
+
+  .toggleInput:checked ~ .dropDownMenu {
+    left: 0px;
+    top: 135px;
+  }
+}

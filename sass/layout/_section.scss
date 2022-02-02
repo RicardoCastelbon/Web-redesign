@@ -1,0 +1,43 @@
+.breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  margin: 2rem;
+
+  li {
+    margin: 0;
+  }
+}
+
+.top-section {
+  padding: 3rem;
+  color: rgb(255, 255, 255);
+  text-align: left;
+  background-image: url(/assets/wallpaper.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  letter-spacing: 0.2rem;
+  margin-bottom: 4rem;
+  overflow-wrap: break-word;
+}
+
+section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+aside {
+  padding: 2rem;
+}
+
+.publications {
+  margin: 0 auto 2.5rem;
+  max-width: 500px;
+}
+
+@media screen and (min-width: 1024px) {
+  .top-section {
+    padding: 9rem;
+  }
+}

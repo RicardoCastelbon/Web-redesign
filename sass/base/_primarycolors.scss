@@ -1,0 +1,24 @@
+/* Nav and footer*/
+footer,
+.nav-container {
+  background: var(--nav-color);
+  p,
+  a,
+  li,
+  i {
+    color: var(--links-color);
+  }
+  i:hover,
+  a:hover {
+    color: var(--links-hover);
+  }
+}
+
+/* Main content */
+a {
+  color: var(--nav-color);
+}
+
+a:hover {
+  color: var(--links-hover);
+}

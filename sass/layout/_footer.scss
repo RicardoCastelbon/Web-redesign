@@ -1,0 +1,16 @@
+footer {
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+
+  div {
+    margin: 1rem 0;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

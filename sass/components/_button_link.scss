@@ -1,0 +1,14 @@
+.button-link {
+  padding: 2rem 8rem;
+  background: var(--nav-color);
+  border: none;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  align-self: flex-start;
+  font-size: 2rem;
+
+  &:hover,
+  &:focus {
+    background: #4f7c86;
+  }
+}
