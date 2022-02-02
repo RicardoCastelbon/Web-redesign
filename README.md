@@ -1,11 +1,10 @@
-# u02-redesign-team3
+# Web-redesign
 
-Sandra Wallén, Licia Thörn, Elinor Kramming, Amanda Wrede, Ricardo Castelbon, Nova Boman
+Ricardo Castelbon, Sandra Wallén, Licia Thörn, Elinor Kramming, Amanda Wrede, Nova Boman
 
 ## The project
 
-The project is built as the second assignment in the course HTML & CSS at Chas Academy.
-The main purpose is to remake Konstnärsnämndens website.
+The main purpose of the project is to remake Konstnärsnämndens website using HTML5, CSS & Sass
 
 During the interviews at the start of this project we found that the users main pain points were that the original
 page was difficult to navigate and there was too much information being displayed at once.
@@ -75,4 +74,4 @@ All links that were in the original left side menu have working links to related
 Original pages "Om Konstnärsnämnden" and "Regeringsuppdrag" were merged because of similar content.
 
 We integrated the right side menu into main menu and index.html clickable card navigation.
-# Web-redesign
+
